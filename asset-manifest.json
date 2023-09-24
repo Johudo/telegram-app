@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/telegram-app/static/css/main.1d90cf08.css",
-    "main.js": "/telegram-app/static/js/main.863ae809.js",
+    "main.css": "/telegram-app/static/css/main.59c1b24c.css",
+    "main.js": "/telegram-app/static/js/main.a651801a.js",
     "static/js/787.c6006e9a.chunk.js": "/telegram-app/static/js/787.c6006e9a.chunk.js",
+    "static/media/Mulish-Black.ttf": "/telegram-app/static/media/Mulish-Black.1c7e28eec1581d8fbe41.ttf",
+    "static/media/Mulish-Bold.ttf": "/telegram-app/static/media/Mulish-Bold.6cb68186a91bb3fcb0b7.ttf",
+    "static/media/Mulish-Light.ttf": "/telegram-app/static/media/Mulish-Light.2b8fbb0e33f960080fd2.ttf",
+    "static/media/Mulish-Medium.ttf": "/telegram-app/static/media/Mulish-Medium.8bdb52a1df8fba9da3ef.ttf",
+    "static/media/Mulish-ExtraBold.ttf": "/telegram-app/static/media/Mulish-ExtraBold.06b5157c67b69344b4be.ttf",
+    "static/media/Mulish-Regular.ttf": "/telegram-app/static/media/Mulish-Regular.d3d302e1573fb1c8db5b.ttf",
+    "static/media/Mulish-SemiBold.ttf": "/telegram-app/static/media/Mulish-SemiBold.6bf3074a2efb3178fd2b.ttf",
+    "static/media/Mulish-ExtraLight.ttf": "/telegram-app/static/media/Mulish-ExtraLight.588a2961a8a2682d569b.ttf",
     "index.html": "/telegram-app/index.html",
-    "main.1d90cf08.css.map": "/telegram-app/static/css/main.1d90cf08.css.map",
-    "main.863ae809.js.map": "/telegram-app/static/js/main.863ae809.js.map",
+    "main.59c1b24c.css.map": "/telegram-app/static/css/main.59c1b24c.css.map",
+    "main.a651801a.js.map": "/telegram-app/static/js/main.a651801a.js.map",
     "787.c6006e9a.chunk.js.map": "/telegram-app/static/js/787.c6006e9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d90cf08.css",
-    "static/js/main.863ae809.js"
+    "static/css/main.59c1b24c.css",
+    "static/js/main.a651801a.js"
   ]
 }
