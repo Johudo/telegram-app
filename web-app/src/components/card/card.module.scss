@@ -1,0 +1,8 @@
+@use "styles/colors";
+
+.card {
+    display: block;
+    border-radius: 16px;
+    border: 1px solid colors.$border-color;
+    background: colors.$white-color;
+}
