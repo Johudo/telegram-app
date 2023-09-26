@@ -12,6 +12,8 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import * as hmacSHA256 from 'crypto-js/hmac-sha256';
 import * as querystring from 'querystring';
+import { MongooseClassSerializerInterceptor } from '../interceptors/mongoose-class-serializer.interceptor';
+import { GetUserDto } from './dto/get-user.dto';
 
 @Controller('users')
 export class UsersController {
@@ -22,11 +24,14 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
+  @MongooseClassSerializerInterceptor(GetUserDto)
   @Get()
   findAll() {
     const query = querystring.decode(
       'query_id=AAGA44obAAAAAIDjiht_CO18&user=%7B%22id%22%3A462087040%2C%22first_name%22%3A%22%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9%22%2C%22last_name%22%3A%22%D0%97%D1%83%D0%B5%D0%B2%22%2C%22username%22%3A%22Johudo%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1695578954&hash=0df509760484533d8122e07fd30a966084ede290d45c8acd2b6c1ae1b3cecfcb',
     );
+    // console.log(JSON.parse(query.user as string).id);
+
     const dataCheckString = `auth_date=${query.auth_date}\nquery_id=${query.query_id}\nuser=${query.user}`;
     const secret_key = hmacSHA256(
       '6530914796:AAFjaLc-vuUd-FiXhUoftbQ53UoTgiqMhmQ',
